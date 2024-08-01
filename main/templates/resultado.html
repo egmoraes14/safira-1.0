@@ -1,5 +1,6 @@
 <!-- resultado.html -->
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +8,11 @@
     <title>Resultado</title>
 </head>
 <body>
-    <h1>Resultado da Pesquisa</h1>
-    <p>Total ponderado: {{ total }}</p>
-    <p> {{ frase }}</p>
-    <a href="{% url 'index' %}" class="btn">voltar ao início</a>
+    <div class = 'pagina'>
+        <h1>Resultado da Pesquisa</h1>
+        <p>Total ponderado: {{ total }}</p>
+        <p> {{ frase }}</p>
+        <a href="{% url 'home' %}" class="btn">voltar ao início</a>
+    </div>
 </body>
 </html>
